@@ -1,0 +1,16 @@
+<!doctype html>
+<title>A graph!  </title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+{% if filename %}
+  <h1> <img src="{{ url_for('static',filename='barchart2.png')}}"> 
+  </h1>
+{% else %}
+<h1>no image!</h1>
+{% endif %}
+  <div class=metanav>
+  </div>
+    <h2> Return reviewers more often give one-star and five-star ratings, except for reviewers who are frequent users.  Frequent users are defined as those who have given a total of 25 reviews or more.  
+    </h2>
+</div>
+

@@ -1,0 +1,28 @@
+<!doctype html>
+<title>A graph!  </title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+{% if filename %}
+  <h1> <img src="{{ url_for('static',filename='n_vs_date2.png')}}"> 
+  </h1>
+{% else %}
+<h1>no image!</h1>
+{% endif %}
+  <div class=metanav>
+  </div>
+    <h2> Yelpers have been generating both 'first-time' and 'follow-up' reviews at increasing rates since Yelp was founded in 2004.  The drop in review number in 2015 is due to lack of the most recent data.  The sudden increase of return reviews around 2014 is yet unexplained.    
+    </h2>
+</div>
+ <div class=metanav>
+  </div>
+   <h2> <img src="{{ url_for('static',filename='wordcloud.png')}}", width=1200, height = 400> 
+    One-time only, first-time, and return reviews are all generally very positive!
+  </h2>
+</div>
+
+ <div class=metanav>
+  </div>
+<h2><img src="{{ url_for('static',filename='wordcloudGB.png')}}", width=1200, height = 600-> 
+    5-star reviews on the left are even more postive, while 1-star reviews on the right are more concerened with service.
+   </h2>
+</div>

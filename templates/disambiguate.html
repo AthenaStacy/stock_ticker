@@ -1,0 +1,26 @@
+<!doctype html>
+<title>Query</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+  <h1>Specify a Song</h1>
+
+  <div class=metanav>
+
+    Did you mean one of these songs?
+
+    <h4>
+      <form id='answerform' method='post' action='disambiguate' >      
+        <p>
+         {% for song in match_song %}
+        <input type='radio' name='artist_pick' value = {{song}} \> 
+          {{match_song[song]}} by {{match_artist[song]}} ({{match_date[song]}}) </input><br />
+         {% endfor %}
+        </p>
+
+        <p>
+          <input type='submit'  />
+        </p>
+      </form>
+    </h4>
+  </div>
+</div>

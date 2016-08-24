@@ -1,0 +1,133 @@
+<!doctype html>
+<title>The Result</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style2.css')}}'>
+
+<style>
+ table, th, td {
+    border: 1px solid black;
+}
+</style>
+
+<div class=page>
+  <h1>The Result</h1>
+  <div class=metanav>
+  
+    <h4>
+      Based on your song choice of
+      <br>
+      <br>
+<table style="width:95%">
+   <tr>
+    <th>Artist</th>
+    <th>Track</th> 
+    <th>Date</th>
+    <th>Sentiment</th>
+    <th>Lex. Div.</th>
+  </tr>
+  <tr>
+    <td>{{input_artist}}</td>
+    <td>{{input_song}}</td> 
+    <td>{{input_date}}</td>
+    <td>{{input_sent}}</td>
+    <td>{{input_lex}}</td>
+  </tr>      
+</table>
+
+<br>You might like these recent hits:  <br><br>
+   
+<table style="width:95%">
+   <tr>
+    <th>Artist</th>
+    <th>Track</th> 
+    <th>Date</th>
+    <th>Sentiment</th>
+    <th>Lex. Div.</th>
+     <th>Lyrics Similarity</th>
+  </tr>
+  <tr>
+    <td>{{artist[0]}}</td>
+    <td>{{track[0]}}</td> 
+    <td>{{date[0]}}</td>
+    <td>{{sentiment[0]}}</td>
+    <td>{{lexdiv[0]}}</td>
+    <td>{{lyricsim[0]}}</td>
+  </tr>
+  <tr>
+    <td>{{artist[1]}}</td>
+    <td>{{track[1]}}</td> 
+    <td>{{date[1]}}</td>
+    <td>{{sentiment[1]}}</td>
+    <td>{{lexdiv[1]}}</td>
+    <td>{{lyricsim[1]}}</td>
+  </tr>
+  <tr>
+    <td>{{artist[2]}}</td>
+    <td>{{track[2]}}</td> 
+    <td>{{date[2]}}</td>
+    <td>{{sentiment[2]}}</td>
+    <td>{{lexdiv[2]}}</td>
+    <td>{{lyricsim[2]}}</td>
+  </tr>
+  <tr>
+    <td>{{artist[3]}}</td>
+    <td>{{track[3]}}</td> 
+    <td>{{date[3]}}</td>
+    <td>{{sentiment[3]}}</td>
+    <td>{{lexdiv[3]}}</td>
+    <td>{{lyricsim[3]}}</td>
+  </tr>
+  <tr>
+    <td>{{artist[4]}}</td>
+    <td>{{track[4]}}</td> 
+    <td>{{date[4]}}</td>
+    <td>{{sentiment[4]}}</td>
+    <td>{{lexdiv[4]}}</td>
+    <td>{{lyricsim[4]}}</td>
+  </tr>
+  <tr>
+    <td>{{artist[5]}}</td>
+    <td>{{track[5]}}</td> 
+    <td>{{date[5]}}</td>
+    <td>{{sentiment[5]}}</td>
+    <td>{{lexdiv[5]}}</td>
+    <td>{{lyricsim[5]}}</td>
+  </tr>
+  <tr>
+    <td>{{artist[6]}}</td>
+    <td>{{track[6]}}</td> 
+    <td>{{date[6]}}</td>
+    <td>{{sentiment[6]}}</td>
+    <td>{{lexdiv[6]}}</td>
+    <td>{{lyricsim[6]}}</td>
+  </tr>
+  <tr>
+    <td>{{artist[7]}}</td>
+    <td>{{track[7]}}</td> 
+    <td>{{date[7]}}</td>
+    <td>{{sentiment[7]}}</td>
+    <td>{{lexdiv[7]}}</td>
+    <td>{{lyricsim[7]}}</td>
+  </tr>
+  <tr>
+    <td>{{artist[8]}}</td>
+    <td>{{track[8]}}</td> 
+    <td>{{date[8]}}</td>
+    <td>{{sentiment[8]}}</td>
+    <td>{{lexdiv[8]}}</td>
+    <td>{{lyricsim[8]}}</td>
+  </tr>
+  <tr>
+    <td>{{artist[9]}}</td>
+    <td>{{track[9]}}</td> 
+    <td>{{date[9]}}</td>
+    <td>{{sentiment[9]}}</td>
+    <td>{{lexdiv[9]}}</td>
+    <td>{{lyricsim[9]}}</td>
+  </tr>
+</table>
+
+
+    </h4>
+
+  </div>
+</div>

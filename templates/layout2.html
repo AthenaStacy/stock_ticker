@@ -1,0 +1,31 @@
+<!doctype html>
+<title>Query</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+  <h1>Question</h1>
+
+  <div class=metanav>
+
+    {{question}}
+
+    <h4>
+      <form id='answerform' method='post' action='next' >
+        <p>
+          Answer: <br />
+          <input type='radio' name='answer_from_layout2' value={{ans1}} /> {{ans1}} 
+          <input type='text' name='song_name' />
+          <br />
+          
+          <input type='radio' name='answer_from_layout2' value={{ans2}} /> {{ans2}} 
+          <input type='text' name='artist_name' />
+          <br />
+
+        </p>
+
+        <p>
+          <input type='submit' value='NextButton' />
+        </p>
+      </form>
+    </h4>
+  </div>
+</div>
