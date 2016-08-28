@@ -2,25 +2,34 @@
 <title>Query</title>
 <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
 <div class=page>
-  <h1>Question #1</h1>
+  <h1>Queries for the user:</h1>
 
   <div class=metanav>
-
-    {{question}}
-
+     
     <h4>
-      <form id='answerform' method='post' action='next' >
+     <br />
+        {{question1}}
+        <form id='answerform' method='post' action='next' >
         <p>
-          Answer: <br />
-          <input type='radio' name='answer_from_layout' value={{ans1}} /> {{ans1}} <br />
-          <input type='radio' name='answer_from_layout' value={{ans2}} /> {{ans2}} <br />
-          <input type='radio' name='answer_from_layout' value={{ans3}} /> {{ans3}} <br />
-          <input type='radio' name='answer_from_layout' value={{ans4}} /> {{ans4}} <br />
-          <input type='radio' name='answer_from_layout' value={{ans5}} /> {{ans5}} <br />
-          <input type='radio' name='answer_from_layout' value={{ans6}} /> {{ans6}} <br />
-          <input type='radio' name='answer_from_layout' value={{ans7}} /> {{ans7}} <br />
-        </p>
+	    Ticker symbol: <input type='text' name='ticker_symbol'  value="GOOG"/>
+	    </p>
 
+        <p>
+        <br />    
+         {{question2}}
+          <br /> 
+          <input type='checkbox',  name='which_price' value='open' > {{ans1}} <br />
+          <input type='checkbox' , name='which_price' value='close' checked='checked'> {{ans2}} <br />
+        </p>
+  
+        
+        <p>
+        <br /> 
+        {{question3}}
+        <br />
+	    Number of months: <input type='text' name='number_of_months'  value="1"/>
+	    </p>
+        
         <p>
           <input type='submit' value='NextButton' />
         </p>
